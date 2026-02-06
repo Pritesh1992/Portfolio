@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Priteshkumar Bhimani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --text-main: #1a1a1a;
+            --text-secondary: #4b5563;
+            --bg-light: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 20px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f3f4f6;
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-title h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .header-title p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .header-contact {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .header-contact a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .summary p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .experience-item,
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .item-header h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .item-header .date {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .item-sub {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .item-list {
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        .item-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .item-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-cat strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .skill-cat p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .print-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="back-link no-print"><i data-lucide="arrow-left" style="width: 16px;"></i> Back to
+        Portfolio</a>
+
+    <button onclick="window.print()" class="print-btn no-print">
+        <i data-lucide="printer" style="width: 18px;"></i> Print / Save as PDF
+    </button>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-title">
+                <h1>Priteshkumar Bhimani</h1>
+                <p>Technical Instructor & Instructional Designer</p>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:pritesh.bhimani1992@gmail.com">pritesh.bhimani1992@gmail.com</a>
+                <a href="https://www.linkedin.com/in/bpriteshkumar/">linkedin.com/in/bpriteshkumar/</a>
+                <a href="https://github.com/Pritesh1992">github.com/Pritesh1992</a>
+                <span>Canada</span>
+            </div>
+        </header>
+
+        <section class="section summary">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Instructional Designer and Technical Educator with over 5 years of expertise in blending academic rigor
+                with digital innovation. Specialized in designing tecnología-enabled learning experiences within the
+                EdTech ecosystem, with a strong background as an Assistant Professor in Computer Engineering.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <h3>Technical Instructor & Instructional Designer</h3>
+                    <span class="date">Aug 2021 – Dec 2025</span>
+                </div>
+                <div class="item-sub">Npower Canada | Canada</div>
+                <ul class="item-list">
+                    <li>Developed storyboards and course structures using <strong>ADDIE</strong> and adult learning
+                        principles.</li>
+                    <li>Created interactive eLearning modules in <strong>Articulate Storyline</strong> and <strong>Rise
+                            360</strong> for Data and IT programs.</li>
+                    <li>Facilitated instructor-led (ILT) and virtual (VILT) technical sessions for diverse learner
+                        cohorts.</li>
+                    <li>Translated complex technical concepts into scenario-based learning with hands-on labs.</li>
+                    <li>Collaborated with SMEs to align training with workforce and industry requirements.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <h3>Assistant Professor (PT)</h3>
+                    <span class="date">Aug 2022 – Jan 2024</span>
+                </div>
+                <div class="item-sub">Georgian College | Canada</div>
+                <ul class="item-list">
+                    <li>Implemented structured assessment frameworks to monitor student performance and effectiveness.
+                    </li>
+                    <li>Taught core technical subjects including Networking, Programming, and Databases.</li>
+                    <li>Organized professional development workshops for institutional growth.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <h3>Assistant Professor & In-charge HOD</h3>
+                    <span class="date">July 2016 – Nov 2019</span>
+                </div>
+                <div class="item-sub">Diwaliba Polytechnic | India</div>
+                <ul class="item-list">
+                    <li>Led the establishment of the Information Technology department and curriculum design.</li>
+                    <li>Managed departmental operations and strengthened academic standards as In-charge HOD.</li>
+                    <li>Specialized in teaching core engineering subjects: Networking, Programming, and Databases.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <h3>Data Structure & Algorithms Course</h3>
+                    <span class="date">Articulate Rise 360</span>
+                </div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">An interactive comprehensive guide designed
+                    to master complex Data Structures and Algorithms with visual aids and progress tracking.</p>
+            </div>
+            <div class="experience-item">
+                <div class="item-header">
+                    <h3>Basic SQL Fundamentals</h3>
+                    <span class="date">Articulate Rise 360</span>
+                </div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">A step-by-step interactive lesson series
+                    covering database queries, data manipulation, and relational logic.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <strong>ID & eLearning</strong>
+                    <p>Articulate Storyline/Rise/Review, Storyboarding, ADDIE, SAM, Blooms Taxonomy</p>
+                </div>
+                <div class="skill-cat">
+                    <strong>LMS & Analytics</strong>
+                    <p>D2L Brightspace, Moodle, Canvas, SCORM, xAPI, Learner Analytics</p>
+                </div>
+                <div class="skill-cat">
+                    <strong>Data & Visualization</strong>
+                    <p>MS Excel (Advanced), SQL, Power BI, Tableau, Data Cleaning</p>
+                </div>
+                <div class="skill-cat">
+                    <strong>Programming & IT</strong>
+                    <p>Python (Pandas), C/C++, Java, HTML/CSS, Networking, System Security, AWS/Azure</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Mobile Solution Development</h3>
+                    <span class="date">2021</span>
+                </div>
+                <p class="item-sub">Conestoga College | Canada (PG Diploma)</p>
+            </div>
+            <div class="education-item">
+                <div class="item-header">
+                    <h3>Master of Technology (Computer Engineering)</h3>
+                    <span class="date">2016</span>
+                </div>
+                <p class="item-sub">Uka Tarsadia University | India</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

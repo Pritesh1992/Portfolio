@@ -7,7 +7,7 @@
     <meta name="description"
         content="Portfolio of a Creative Instructional Designer. Specializing in eLearning, Curriculum Design, and Educational Technology.">
     <title>Instructional Designer Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=9">
+    <link rel="stylesheet" href="styles.css?v=31">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +20,17 @@
 
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo">P. Bhimani</a>
+        <a href="index.html" class="logo">
+            <img src="images/profile.jpg" alt="Priteshkumar Bhimani" class="logo-img">
+        </a>
         <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#about">About</a>
+            <a href="#portfolio">Projects</a>
             <a href="#tools">Tools</a>
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
-            <a href="#portfolio">Work</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </div>
         <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -37,13 +40,20 @@
 
     <header id="hero" class="hero-section">
         <div class="hero-content">
-            <h1 class="fade-in-up">From Classroom to Digital — <br>Designing Learning That <span
+            <h1 class="fade-in-up">From Classroom to <br>Digital — Designing Learning That <span
                     class="highlight">Performs</span></h1>
             <p class="subtitle fade-in-up delay-1">Blending academic teaching experience with modern instructional
                 design practices.</p>
+            <p class="summary-text fade-in-up delay-2">Instructional Designer and Technical Educator with academic
+                experience as an Assistant Professor in Computer Engineering and Information Technology, specializing in
+                designing technology-enabled learning experiences within the EdTech ecosystem.</p>
             <div class="cta-group fade-in-up delay-2">
-                <a href="#portfolio" class="btn primary">View My Work</a>
-                <a href="#contact" class="btn secondary">Get in Touch</a>
+                <a href="#portfolio" class="btn primary"><i data-lucide="layout" style="width: 18px;"></i> View My
+                    Projects</a>
+                <a href="#contact" class="btn secondary"><i data-lucide="send" style="width: 18px;"></i> Get in
+                    Touch</a>
+                <a href="resume.html" target="_blank" class="btn secondary resume-btn"><i data-lucide="file-text"
+                        style="width: 18px;"></i> View Resume</a>
             </div>
         </div>
         <div class="hero-visual fade-in delay-3">
@@ -59,40 +69,98 @@
                 <h2>About Me</h2>
                 <div class="underline"></div>
             </div>
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Priteshkumar Bhimani" class="profile-pic">
-                </div>
-                <div class="about-content-wrapper">
-                    <div class="about-text">
-                        <p>Hello! I'm <strong>Priteshkumar Bhimani</strong>, an Instructional Designer passionate about
-                            transforming complex information into engaging, digestible learning experiences. With
-                            expertise in <strong>ADDIE</strong>, <strong>SAM</strong>, and modern eLearning tools, I
-                            bridge the gap between educational theory and practical application.</p>
-                        <ul class="skills-list">
-                            <li><i data-lucide="check-circle"></i> E-Learning Development</li>
-                            <li><i data-lucide="check-circle"></i> Curriculum Design</li>
-                            <li><i data-lucide="check-circle"></i> Storyboarding</li>
-                            <li><i data-lucide="check-circle"></i> LMS Management</li>
-                            <li><i data-lucide="check-circle"></i> Adobe Articulate / Captivate</li>
-                        </ul>
+            <div class="about-layout">
+                <div class="about-sidebar">
+                    <div class="profile-wrapper">
+                        <img src="images/profile.jpg" alt="Priteshkumar Bhimani" class="profile-pic">
+                        <div class="floating-badge">
+                            <i data-lucide="zap"></i>
+                            <span>ID Specialist</span>
+                        </div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
+                </div>
+
+                <div class="about-main">
+                    <div class="about-intro">
+                        <p class="lead-text">I bridge the gap between academic rigor and digital innovation.</p>
+                        <p>With a background as an <strong>Assistant Professor</strong> in Computer Engineering and a
+                            passion for <strong>Instructional Design</strong>, I create learning ecosystems that are not
+                            just informative, but transformative.</p>
+                    </div>
+
+                    <div class="focus-grid">
+                        <div class="focus-card">
+                            <div class="focus-icon"><i data-lucide="layout"></i></div>
+                            <h3>Design</h3>
+                            <p>ADDIE, SAM, & Storyboarding</p>
                         </div>
-                        <div class="stat-card">
-                            <h3>50+</h3>
-                            <p>Projects Delivered</p>
+                        <div class="focus-card active">
+                            <div class="focus-icon"><i data-lucide="code"></i></div>
+                            <h3>Develop</h3>
+                            <p>Articulate Rise & Technical ILT</p>
                         </div>
-                        <div class="stat-card">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                        <div class="focus-card">
+                            <div class="focus-icon"><i data-lucide="graduation-cap"></i></div>
+                            <h3>Educate</h3>
+                            <p>Academic & SME Facilitation</p>
+                        </div>
+                    </div>
+
+                    <div class="about-footer-stats">
+                        <div class="mini-stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years of Expertise</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Subject Domains</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-number">1k+</span>
+                            <span class="stat-label">Learners Reached</span>
                         </div>
                     </div>
                 </div>
             </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="project-placeholder">DSA Course</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Structure & Algorithms</h3>
+                        <p class="project-type">Articulate Rise 360</p>
+                        <p>An interactive comprehensive guide to mastering Data Structures and Algorithms.</p>
+                        <a href="https://pritesh1992.github.io/Data-structure-and-algorithm-using-Articulate/"
+                            target="_blank" class="btn-text">Launch Course <i data-lucide="external-link"></i></a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image"
+                        style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
+                        <span class="project-placeholder">SQL Fundamentals</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Basic SQL Fundamentals</h3>
+                        <p class="project-type">Articulate Rise 360</p>
+                        <p>A step-by-step interactive lesson series covering SQL basics and database queries.</p>
+                        <a href="https://pritesh1992.github.io/Articulate-Basic-SQL-/#/lessons/cmkpo7uwj002q357hyvpu1x54"
+                            target="_blank" class="btn-text">Launch Course <i data-lucide="external-link"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
     <section id="tools" class="section tools-section">
@@ -110,111 +178,104 @@
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="pen-tool"></i></div>
                     <h3>Instructional Design & eLearning</h3>
-                    <ul>
-                        <li>Articulate Storyline 360</li>
-                        <li>Articulate Rise 360</li>
-                        <li>Articulate Review 360</li>
-                        <li>Microsoft PowerPoint</li>
-                        <li>Canva</li>
-                        <li>Figma</li>
-                        <li>Vyond / Powtoon</li>
-                        <li>Camtasia</li>
-                        <li>Adobe Captivate</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Articulate Storyline 360</span>
+                        <span class="skill-tag">Articulate Rise 360</span>
+                        <span class="skill-tag">Microsoft PowerPoint</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
                 </div>
 
                 <!-- LMS -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="monitor"></i></div>
                     <h3>LMS & Analytics</h3>
-                    <ul>
-                        <li>D2L Brightspace</li>
-                        <li>Moodle LMS</li>
-                        <li>Blackboard</li>
-                        <li>Canvas LMS</li>
-                        <li>SCORM & xAPI</li>
-                        <li>Learner Analytics & Tracking</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">D2L Brightspace</span>
+                        <span class="skill-tag">Moodle LMS</span>
+                        <span class="skill-tag">Canvas LMS</span>
+                        <span class="skill-tag">SCORM & xAPI</span>
+                        <span class="skill-tag">Learner Analytics</span>
+                    </div>
                 </div>
 
                 <!-- Data Analysis -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="bar-chart-2"></i></div>
                     <h3>Data Analysis & Visualization</h3>
-                    <ul>
-                        <li>Microsoft Excel (Advanced)</li>
-                        <li>SQL (MySQL / SQL Server)</li>
-                        <li>Power BI</li>
-                        <li>Tableau</li>
-                        <li>Google Sheets</li>
-                        <li>Data Cleaning Techniques</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS Excel (Advanced)</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Data Cleaning</span>
+                    </div>
                 </div>
 
                 <!-- Programming -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="code"></i></div>
                     <h3>Programming & Technical</h3>
-                    <ul>
-                        <li>Python (Pandas, NumPy)</li>
-                        <li>C / C++</li>
-                        <li>Java</li>
-                        <li>HTML & CSS</li>
-                        <li>JavaScript (Basics)</li>
-                        <li>Jupyter Notebook</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python (Pandas)</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
                 </div>
 
                 <!-- Databases -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="database"></i></div>
                     <h3>Database Management</h3>
-                    <ul>
-                        <li>Relational Database Design</li>
-                        <li>MySQL</li>
-                        <li>Oracle Database</li>
-                        <li>ER Diagram Modeling</li>
-                        <li>Query Optimization</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Relational Design</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">ER Diagramming</span>
+                        <span class="skill-tag">Query Optimization</span>
+                    </div>
                 </div>
 
                 <!-- IT Systems -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="server"></i></div>
                     <h3>IT & Systems Training</h3>
-                    <ul>
-                        <li>Computer Hardware & OS</li>
-                        <li>Network Fundamentals</li>
-                        <li>IT Support & Troubleshooting</li>
-                        <li>System Security Basics</li>
-                        <li>Cloud Computing (AWS/Azure)</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Hardware & OS</span>
+                        <span class="skill-tag">Networking</span>
+                        <span class="skill-tag">IT Troubleshooting</span>
+                        <span class="skill-tag">System Security</span>
+                        <span class="skill-tag">AWS / Azure</span>
+                    </div>
                 </div>
 
                 <!-- Virtual Training -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="video"></i></div>
                     <h3>Virtual Training & Collaboration</h3>
-                    <ul>
-                        <li>Microsoft Teams</li>
-                        <li>Zoom</li>
-                        <li>Google Meet</li>
-                        <li>Cisco Webex</li>
-                        <li>Miro / Digital Whiteboarding</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Teams</span>
+                        <span class="skill-tag">Zoom / Meet</span>
+                        <span class="skill-tag">Cisco Webex</span>
+                        <span class="skill-tag">Miro</span>
+                        <span class="skill-tag">Digital Whiteboarding</span>
+                    </div>
                 </div>
 
                 <!-- Academic -->
                 <div class="tool-card">
                     <div class="tool-icon"><i data-lucide="book-open"></i></div>
                     <h3>Academic & Curriculum</h3>
-                    <ul>
-                        <li>Outcome-Based Education (OBE)</li>
-                        <li>Curriculum & Syllabus Design</li>
-                        <li>Bloom’s Taxonomy Alignment</li>
-                        <li>Assessment & Rubric Dev</li>
-                        <li>Instructional Strategy Planning</li>
-                    </ul>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OBE Framework</span>
+                        <span class="skill-tag">Curriculum Design</span>
+                        <span class="skill-tag">Bloom’s Taxonomy</span>
+                        <span class="skill-tag">Assessment Dev</span>
+                        <span class="skill-tag">Strategy Planning</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,56 +406,91 @@
         </div>
     </section>
 
-    <section id="portfolio" class="section portfolio-section">
+    <section id="certifications" class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Featured Work</h2>
+                <h2>Certifications</h2>
                 <div class="underline"></div>
             </div>
-            <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="project-placeholder">DSA Course</span>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div class="cert-content">
+                        <h3>Instructional Design Foundations and Applications</h3>
+                        <p>University of Illinois Urbana-Champaign</p>
                     </div>
-                    <div class="project-content">
-                        <h3>Data Structure & Algorithms</h3>
-                        <p class="project-type">Articulate Rise 360</p>
-                        <p>An interactive comprehensive guide to mastering Data Structures and Algorithms.</p>
-                        <a href="https://pritesh1992.github.io/Data-structure-and-algorithm-using-Articulate/"
-                            target="_blank" class="btn-text">Launch Course <i data-lucide="external-link"></i></a>
+                </div>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/PBJPRBNWQZXF?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+                    target="_blank" class="cert-card">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div class="cert-content">
+                        <h3>IBM Data Analyst Professional Certificate</h3>
+                        <p>IBM <i data-lucide="external-link"
+                                style="width: 14px; margin-left: 5px; display: inline-block; vertical-align: middle;"></i>
+                        </p>
                     </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-image"
-                        style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
-                        <span class="project-placeholder">SQL Fundamentals</span>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/GNQXR8YS77DD?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+                    target="_blank" class="cert-card">
+                    <div class="cert-icon"><i data-lucide="shield"></i></div>
+                    <div class="cert-content">
+                        <h3>Google IT Support Professional Certificate</h3>
+                        <p>Google <i data-lucide="external-link"
+                                style="width: 14px; margin-left: 5px; display: inline-block; vertical-align: middle;"></i>
+                        </p>
                     </div>
-                    <div class="project-content">
-                        <h3>Basic SQL Fundamentals</h3>
-                        <p class="project-type">Articulate Rise 360</p>
-                        <p>A step-by-step interactive lesson series covering SQL basics and database queries.</p>
-                        <a href="https://pritesh1992.github.io/Articulate-Basic-SQL-/#/lessons/cmkpo7uwj002q357hyvpu1x54"
-                            target="_blank" class="btn-text">Launch Course <i data-lucide="external-link"></i></a>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/professional-cert/PAE462PRGAPX?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+                    target="_blank" class="cert-card">
+                    <div class="cert-icon"><i data-lucide="check-circle"></i></div>
+                    <div class="cert-content">
+                        <h3>Google Project Management Professional Certificate</h3>
+                        <p>Google <i data-lucide="external-link"
+                                style="width: 14px; margin-left: 5px; display: inline-block; vertical-align: middle;"></i>
+                        </p>
                     </div>
-                </article>
+                </a>
+                <a href="https://www.credly.com/badges/1cae2ba6-fe7d-4ea1-a246-2087a3229fd5/linked_in" target="_blank"
+                    class="cert-card">
+                    <div class="cert-icon"><i data-lucide="cloud"></i></div>
+                    <div class="cert-content">
+                        <h3>Azure Fundamentals (AZ-900)</h3>
+                        <p>Microsoft <i data-lucide="external-link"
+                                style="width: 14px; margin-left: 5px; display: inline-block; vertical-align: middle;"></i>
+                        </p>
+                    </div>
+                </a>
+                <a href="https://www.credly.com/badges/1f97048d-06a1-4db6-9d80-93954cce29ab/linked_in?t=rh1kuv"
+                    target="_blank" class="cert-card">
+                    <div class="cert-icon"><i data-lucide="brain-circuit"></i></div>
+                    <div class="cert-content">
+                        <h3>Azure Artificial Intelligence (AI-900)</h3>
+                        <p>Microsoft <i data-lucide="external-link"
+                                style="width: 14px; margin-left: 5px; display: inline-block; vertical-align: middle;"></i>
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
+
+
     <section id="contact" class="section contact-section">
         <div class="container">
             <div class="contact-box">
+                <div class="active-status">
+                    <span class="pulse-dot"></span>
+                    Available for New Opportunities
+                </div>
                 <h2>Let's Collaborate</h2>
                 <p>Have a project in mind or want to discuss learning strategies? Reach out!</p>
                 <div class="contact-methods">
                     <a href="mailto:pritesh.bhimani1992@gmail.com" class="contact-item">
                         <i data-lucide="mail"></i> pritesh.bhimani1992@gmail.com
                     </a>
-                    <a href="#" class="contact-item">
-                        <i data-lucide="linkedin"></i> LinkedIn Profile
+                    <a href="https://www.linkedin.com/in/bpriteshkumar/" target="_blank" class="contact-item">
+                        <i data-lucide="linkedin"></i> LinkedIn
                     </a>
                 </div>
                 <form class="contact-form" action="https://formsubmit.co/pritesh.bhimani1992@gmail.com" method="POST">
@@ -413,7 +509,16 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Instructional Designer Portfolio. Designed with excellence.</p>
+        <div class="container footer-content">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/bpriteshkumar/" target="_blank" aria-label="LinkedIn"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="https://github.com/Pritesh1992" target="_blank" aria-label="GitHub"><i
+                        data-lucide="github"></i></a>
+                <a href="mailto:pritesh.bhimani1992@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+            <p>&copy; 2026 Instructional Designer Portfolio. Designed with excellence.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
