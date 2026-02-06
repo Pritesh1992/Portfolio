@@ -7,7 +7,7 @@
     <meta name="description"
         content="Portfolio of a Creative Instructional Designer. Specializing in eLearning, Curriculum Design, and Educational Technology.">
     <title>Instructional Designer Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=8">
+    <link rel="stylesheet" href="styles.css?v=9">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,17 +390,22 @@
                 <h2>Let's Collaborate</h2>
                 <p>Have a project in mind or want to discuss learning strategies? Reach out!</p>
                 <div class="contact-methods">
-                    <a href="mailto:hello@example.com" class="contact-item">
-                        <i data-lucide="mail"></i> hello@example.com
+                    <a href="mailto:pritesh.bhimani1992@gmail.com" class="contact-item">
+                        <i data-lucide="mail"></i> pritesh.bhimani1992@gmail.com
                     </a>
                     <a href="#" class="contact-item">
                         <i data-lucide="linkedin"></i> LinkedIn Profile
                     </a>
                 </div>
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent (demo)!');">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form class="contact-form" action="https://formsubmit.co/pritesh.bhimani1992@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Optional, usually just auto-redirects or back -->
+
                     <button type="submit" class="btn primary">Send Message</button>
                 </form>
             </div>
